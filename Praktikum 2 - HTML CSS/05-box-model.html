@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Box Model</title>
+    <link rel="stylesheet" href="05-box-model.css" />
+</head>
+<body>
+    <h1>Belajar CSS Box Model</h1>
+    <div class="section">
+        <h2>Apa itu Box Model?</h2>
+        <p>
+            [cite_start]Setiap elemen HTML dapat dianggap sebagai sebuah kotak yang terdiri dari: [cite: 2, 16]
+        </p>
+        <ul>
+            [cite_start]<li><strong>Content:</strong> Isi sebenarnya dari elemen</li> [cite: 2]
+            [cite_start]<li><strong>Padding:</strong> Ruang antara content dan border</li> [cite: 2]
+            [cite_start]<li><strong>Border:</strong> Garis tepi elemen</li> [cite: 2]
+            [cite_start]<li><strong>Margin:</strong> Ruang di luar border, memisahkan dengan elemen lain</li> [cite: 2]
+        </ul>
+    </div>
+    <div class="section">
+        <h2>Visual Box Model</h2>
+        <div class="box-model-demo">
+            <div class="margin-demo">
+                <div class="border-demo">
+                    <div class="padding-demo">
+                        <div class="content-demo">CONTENT</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="box-labels">
+            <span class="label-margin">Margin</span>
+            <span class="label-border">Border</span>
+            <span class="label-padding">Padding</span>
+            <span class="label-content">Content</span>
+        </p>
+    </div>
+    <div class="section">
+        <h2>Margin (Ruang Luar)</h2>
+        <h3>Margin Individual</h3>
+        <div class="margin-top">Margin Top 20px</div>
+        <div class="margin-right">Margin Right 30px</div>
+        <div class="margin-bottom">Margin Bottom 25px</div>
+        <div class="margin-left">Margin Left 40px</div>
+        <h3>Margin Shorthand</h3>
+        [cite_start]<div class="margin-all">Margin semua sisi 15px</div> [cite: 12]
+        <div class="margin-vertical-horizontal">
+            [cite_start]Margin vertical 20px, horizontal 30px [cite: 12, 13]
+        </div>
+        <div class="margin-individual-short">
+            [cite_start]Margin: top 10px, right 20px, bottom 15px, left 25px [cite: 15, 16]
+        </div>
+        <h3>Margin Auto (Centering)</h3>
+        [cite_start]<div class="margin-auto">Element dengan margin auto (terpusat)</div> [cite: 23]
+        <h3>Negative Margin</h3>
+        <div class="negative-margin-container">
+            [cite_start]<div class="negative-margin">Element dengan negative margin</div> [cite: 30]
+        </div>
+    </div>
+    <div class="section">
+        <h2>Padding (Ruang Dalam)</h2>
+        <h3>Padding Individual</h3>
+        [cite_start]<div class="padding-top">Padding Top 15px</div> [cite: 46]
+        [cite_start]<div class="padding-right">Padding Right 25px</div> [cite: 48]
+        [cite_start]<div class="padding-bottom">Padding Bottom 20px</div> [cite: 50]
+        [cite_start]<div class="padding-left">Padding Left 30px</div> [cite: 52]
+        <h3>Padding Shorthand</h3>
+        [cite_start]<div class="padding-all">Padding semua sisi 20px</div> [cite: 57]
+        <div class="padding-vertical-horizontal">
+            [cite_start]Padding vertical 15px, horizontal 25px [cite: 61]
+        </div>
+        <div class="padding-individual-short">
+            [cite_start]Padding: top 5px, right 15px, bottom 10px, left 20px [cite: 67]
+        </div>
+        <h3>Padding vs Content Size</h3>
+        <div class="padding-content-demo">
+            [cite_start]<div class="with-padding">Dengan padding 20px</div> [cite: 76]
+            [cite_start]<div class="without-padding">Tanpa padding</div> [cite: 78]
+        </div>
+    </div>
+    <div class="section">
+        <h2>Border (Garis Tepi)</h2>
+        <h3>Border Style</h3>
+        [cite_start]<div class="border-solid">Border Solid</div> [cite: 94, 95]
+        [cite_start]<div class="border-dashed">Border Dashed</div> [cite: 97, 98]
+        [cite_start]<div class="border-dotted">Border Dotted</div> [cite: 100, 101]
+        [cite_start]<div class="border-double">Border Double</div> [cite: 103, 104]
+        [cite_start]<div class="border-groove">Border Groove</div> [cite: 106, 107]
+        [cite_start]<div class="border-ridge">Border Ridge</div> [cite: 109, 110]
+        [cite_start]<div class="border-inset">Border Inset</div> [cite: 112, 113]
+        [cite_start]<div class="border-outset">Border Outset</div> [cite: 115]
+        <h3>Border Width</h3>
+        [cite_start]<div class="border-thin">Border Thin (1px)</div> [cite: 117]
+        [cite_start]<div class="border-medium">Border Medium (3px)</div> [cite: 117]
+        [cite_start]<div class="border-thick">Border Thick (5px)</div> [cite: 117]
+        [cite_start]<div class="border-custom-width">Border Custom (8px)</div> [cite: 117]
+        <h3>Border Color</h3>
+        [cite_start]<div class="border-colored">Border dengan berbagai warna</div> [cite: 117]
+        <h3>Border Individual</h3>
+        [cite_start]<div class="border-individual">Border hanya di sisi tertentu</div> [cite: 117]
+        <h3>Border Radius</h3>
+        <div class="border-radius-demo">
+            [cite_start]<div class="radius-small">Radius 5px</div> [cite: 117]
+            [cite_start]<div class="radius-medium">Radius 15px</div> [cite: 117]
+            [cite_start]<div class="radius-large">Radius 25px</div> [cite: 117]
+            [cite_start]<div class="radius-circle">Radius 50% (Circle)</div> [cite: 117]
+            [cite_start]<div class="radius-individual">Radius berbeda setiap sudut</div> [cite: 117]
+        </div>
+    </div>
+    <div class="section">
+        <h2>Box Sizing</h2>
+        <h3>Content Box (Default)</h3>
+        <div class="box-sizing-demo">
+            <div class="content-box">
+                [cite_start]Content Box: width tidak termasuk padding dan border [cite: 147]
+                [cite_start]<br />Total lebar width + padding + border [cite: 148]
+            </div>
+        </div>
+        <h3>Border Box</h3>
+        [cite_start]<div class="box-sizing-demo"> [cite: 127]
+            <div class="border-box">
+                [cite_start]Border Box: width sudah termasuk padding dan border [cite: 129]
+                [cite_start]<br />Total lebar = width [cite: 130]
+            </div>
+        </div>
+    </div>
+    [cite_start]<div class="section"> [cite: 156]
+        [cite_start]<h2>Contoh Praktis</h2> [cite: 157]
+        [cite_start]<h3>Card Component</h3> [cite: 158]
+        <div class="card">
+            <div class="card-header">
+                <h4>Judul Card</h4>
+            </div>
+            <div class="card-body">
+                <p>
+                    [cite_start]Ini adalah isi dari card yang menggunakan kombinasi margin, padding, dan border untuk menciptakan layout yang rapi. [cite: 163, 164]
+                </p>
+                <button class="card-button">Action Button</button>
+            </div>
+        </div>
+        <h3>Button Styles</h3>
+        <div class="button-demo">
+            [cite_start]<button class="btn-primary">Primary Button</button> [cite: 176]
+            [cite_start]<button class="btn-secondary">Secondary Button</button> [cite: 178]
+            [cite_start]<button class="btn-outline">Outline Button</button> [cite: 180]
+            [cite_start]<button class="btn-rounded">Rounded Button</button> [cite: 183]
+        </div>
+        <h3>Layout dengan Box Model</h3>
+        <div class="layout-demo">
+            <div class="sidebar">
+                <h4>Sidebar</h4>
+                <ul>
+                    <li>Menu 1</li>
+                    <li>Menu 2</li>
+                    <li>Menu 3</li>
+                </ul>
+            </div>
+            <div class="main-content">
+                <h4>Main Content</h4>
+                <p>
+                    [cite_start]Area konten utama yang menggunakan margin dan padding untuk spacing yang tepat. [cite: 217, 218]
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <h2>Tips: Gunakan Browser Inspector</h2>
+        <div class="inspector-demo">
+            <p>
+                [cite_start]Klik kanan pada element ini Inspect Element untuk melihat box model secara visual di Developer Tools browser. [cite: 226]
+            </p>
+            [cite_start]<div class="inspect-me">Element untuk di-inspect</div> [cite: 226]
+        </div>
+    </div>
+</body>
+</html>
