@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Belajar Paragraf</title>
+    </head>
+    <body>
+        <h1> Contoh Paragraf  dan text formating </h1>
+    
+    <p>
+        Ini adalah paragraf pertama.
+    </p>
+
+    <p>
+        Ini adalah paragraf kedua.
+    </p>
+
+    <p>
+        Dalam paragraf ini menggunakan <strong> text tebal </strong> dan <em>text miring</em>
+    </p>
+
+    <p>
+        Kita juga membuat text <u>bargaris bawah</u> dan <mark> highlight </mark>
+    </p>
+    
+    <p>
+        Baris pertama <br  />dan kedua</p>
+    
+    <hr />
+</body>
+</html>
